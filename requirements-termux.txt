@@ -1,0 +1,15 @@
+# Android / Termux uchun. O‘rnatish: bash install-termux.sh
+# Pillow va matplotlib pip bilan emas, `pkg` orqali o‘rnatiladi (telefonda kompilyatsiya qilinmaydi).
+# Baza: SQLite (server kerak emas). PostgreSQL kerak bo‘lsa — `pip install asyncpg` qo‘shimcha.
+
+aiogram>=3.13,<4
+# Termux User Repository indeksida shu versiya uchun tayyor wheel bor (pydantic-core 2.41.5) —
+# yangiroq versiya telefonda Rust bilan kompilyatsiya talab qilishi mumkin.
+pydantic==2.12.5
+SQLAlchemy>=2.0.30,<2.1
+aiosqlite>=0.19
+APScheduler>=3.10,<4
+python-dotenv>=1.0
+openpyxl>=3.1
+fpdf2>=2.7.8
+tzdata>=2024.1
